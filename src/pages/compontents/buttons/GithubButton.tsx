@@ -8,6 +8,7 @@ export default function GithubButton() {
                 <div>
                     <SiGithub size="36"/>
                 </div>
+                <span className="sidebar-tooltip group-hover:scale-100">GitHub</span>
             </div>
         </Link>
     )

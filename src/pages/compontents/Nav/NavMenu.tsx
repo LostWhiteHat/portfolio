@@ -31,7 +31,7 @@ export const NavMenu = () => {
     const { height } = useDimensions(containerRef);
 
     return (
-        <motion.nav initial={false} animate={isOpen ? "open" : "close"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-24">
+        <motion.nav initial={false} animate={isOpen ? "open" : "closed"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-24">
             <motion.div className="absolute top-0 left-0 right-0 w-24" variants={sidebar}>
                 <Navigation />
                 <BurgerMenu toggle={() => toggleOpen()}/>

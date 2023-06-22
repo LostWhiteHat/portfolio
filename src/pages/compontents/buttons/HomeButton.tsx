@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { SiBookalope } from 'react-icons/si'
 
+
+
 export default function HomeButton() {
     return (
         <Link href="/">

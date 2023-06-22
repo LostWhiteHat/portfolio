@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { SVGMotionProps, motion } from "framer-motion";
+import { RefAttributes } from "react";
 
-const Path = props => {
+const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & RefAttributes<SVGPathElement>) => {
     return (
         <motion.path 
         fill="transparent"
@@ -14,8 +15,8 @@ const Path = props => {
 
 export const BurgerMenu = ({toggle}: any) => {
     return (
-        <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-5 left-4 w-12 h-12 rounded-full">
-            <svg width={23} height={23} viewBox="0 0 23 23">
+        <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-5 left-5 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
+            <svg width={23} height={23} viewBox="0 0 23 23" color="#3b82f6">
                 <Path variants={{
                     closed: { d: "M 2 2.5 L 20 2.5" },
                     open: { d: "M 3 16.5 L 17 2.5" }

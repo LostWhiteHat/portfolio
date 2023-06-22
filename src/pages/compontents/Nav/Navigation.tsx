@@ -14,13 +14,34 @@ const variants = {
   }
 };
 
+const liVariants = {
+  open: {
+    y: 0,
+    display: "block",
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: 50,
+    display: "none",
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+}
+
 const MenuItem = ({i}) => {
-    const items: JSX.Element[] = [<HomeButton/>, <ProjectButton/>, <AboutmeButton/>, <GithubButton/>];
-    return (items[i]);
+    const items: JSX.Element[] = [<HomeButton />, <ProjectButton/>, <AboutmeButton/>, <GithubButton/>];
+    return (
+      <motion.li variants={liVariants}>
+         {items[i]}
+      </motion.li>
+      );
 }
 
 export const Navigation = () => (
-  <motion.ul variants={variants} className="absolute m-0 p-6 top-24 w-24">
+  <motion.ul variants={variants} className="absolute m-0 top-20">
     {itemId.map(i => (
       <MenuItem i={i} key={i} />
     ))}
