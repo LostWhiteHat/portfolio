@@ -1,10 +1,11 @@
-# About
-
-
+<h1 align="center">
+    Portfolio Webapp - v1.0
+</h1>
 <div align="center">
-    <img src="https://raw.githubusercontent.com/LostWhiteHat/portfolio/004c7d945b3100593c96f747a5ed9cbfb2febf83/public/images/logo-no-background.svg>"/>
+    <img src="./public/images/logo-no-background.svg"/>
 </div>
 
+## About
 The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license. Please give me proper credit by linking back to [LostWhiteHat](https://github.com/LostWhiteHat/next-webapp). Thanks!\
 
 
