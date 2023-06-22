@@ -66,7 +66,6 @@ button {
   }
 }
 
-
 @layer base {
   body {
     @apply bg-primary w-full h-full overflow-hidden p-0 m-0 flex justify-center items-center;
@@ -90,15 +89,15 @@ button {
     transition-all duration-100 scale-0 origin-left;
   }
 
-  .content-table {
-    @apply relative h-full ml-12
-  }
-
   .layout-content {
-    @apply fixed grid w-auto h-auto p-7 left-28 right-0 top-0 bottom-0 pl-48 pr-64 pt-32 pb-44 gap-6 grid-cols-[2fr_1fr_2fr] grid-rows-2 list-none;
+    @apply fixed grid left-64 right-64 top-32 bottom-44
+    gap-6 grid-cols-[2fr_2fr_2fr] grid-rows-2 list-none;
   }
 
   .layout_item {
-    @apply relative overflow-hidden bg-blue-500 bg-opacity-60 rounded-xl p-5 hover:bg-opacity-100 min-h-[16rem]
+    @apply overflow-hidden bg-footcolor bg-opacity-60 rounded-xl min-h-[16rem]
+    transition-all duration-150
+    border-blue-600 hover:border-4 
+    shadow-black shadow-lg hover:bg-opacity-100
   }
 }
