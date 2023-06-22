@@ -11,7 +11,7 @@
 
 
 ## About
-The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license. Please give me proper credit by linking back to [LostWhiteHat](https://github.com/LostWhiteHat/next-webapp). Thanks!
+The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the GPL V3 license.
 
 
 ## TODO
