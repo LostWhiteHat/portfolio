@@ -5,7 +5,7 @@
     <img src="./public/images/logo-no-background.svg"/>
 </div>
 
-[![Licence](https://img.shields.io/github/license/LostWhiteHat/portfolio.git/markdown-badges?style=for-the-badge)](./LICENSE) &nbsp;
+[![Licence](https://img.shields.io/github/license/LostWhiteHat/portfolio/markdown-badges?style=for-the-badge)](./LICENSE) &nbsp;
 ![GitHub Repo stars](https://img.shields.io/github/stars/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
 ![GitHub Repo stars](https://img.shields.io/github/forks/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
 
