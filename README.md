@@ -17,7 +17,7 @@ The repo is an open source project and can be forked, modified, used for your ow
 ## TODO
 ❌ Make site fully responsive\
 ❌ Add about me page\
-✅ Edit project page to seperated project buttons per language\
+✅ ~~Edit project page to seperated project buttons per language~~\
 ❌ Add pages to the seperated buttons\
 
 
