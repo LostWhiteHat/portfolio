@@ -5,6 +5,11 @@
     <img src="./public/images/logo-no-background.svg"/>
 </div>
 
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/stars/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/forks/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+___
+
 ## About
 The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license. Please give me proper credit by linking back to [LostWhiteHat](https://github.com/LostWhiteHat/next-webapp). Thanks!\
 
@@ -15,14 +20,6 @@ The repo is an open source project and can be forked, modified, used for your ow
 ❌ Edit project page to seperated project buttons per language\
 ❌ Add pages to the seperated buttons\
 ❌ Add parallax animation for the project pages\
-
-
-## Status
-[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/forks/LostWhiteHat/portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-
-## Features
 
 
 ## Getting Started
