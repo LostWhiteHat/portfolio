@@ -15,11 +15,6 @@ export default function Projects() {
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-10 layout-table">
-            <header className='z-50 fixed'>
-                    <SideBar/>
-                    <Waves/>
-            </header>
-
             <div className='layout-content'>
                 <motion.button 
                 id='content1' 

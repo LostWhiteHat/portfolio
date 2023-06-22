@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Waves() {
     return  (
-        <div className='fixed bottom-0 left-24 right-0'>
+        <div className='fixed bottom-0 left-0 right-0'>
           <svg className="relative w-full h-[12vh] min-h-[100px] max-h-[150px]" 
             xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
