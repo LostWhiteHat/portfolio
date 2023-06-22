@@ -52,15 +52,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 [![Framer Motion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=white)](https://github.com/framer/motion)
 [![React Icons](https://img.shields.io/badge/React%20Icons-red?style=for-the-badge&logo=react&logoColor=black)](https://github.com/react-icons/react-icons)
 [![Tailwindcss](https://img.shields.io/badge/Tailwindcss-blue?style=for-the-badge&logo=tailwindcss&logoColor=marine)](https://github.com/tailwindlabs/tailwindcss)
-
-
-
-
-
-
-
-
-
-
-
-
