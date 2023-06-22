@@ -31,16 +31,16 @@ const liVariants = {
 }
 
 const MenuItem = ({i}) => {
-    const items: JSX.Element[] = [<HomeButton />, <ProjectButton/>, <AboutmeButton/>, <GithubButton/>];
-    return (
-      <motion.li variants={liVariants}>
-         {items[i]}
-      </motion.li>
-      );
+  const items: JSX.Element[] = [<HomeButton />, <ProjectButton/>, <AboutmeButton/>, <GithubButton/>];
+   return (
+    <motion.li variants={liVariants}>
+      {items[i]}
+    </motion.li>
+  );
 }
 
 export const Navigation = () => (
-  <motion.ul variants={variants} className="absolute top-20">
+  <motion.ul variants={variants} className="absolute top-48 left-2">
     {itemId.map(i => (
       <MenuItem i={i} key={i} />
     ))}

@@ -7,7 +7,7 @@ import { BurgerMenu } from "./BurgerMenu";
 
 const sidebar = {
     open: (height = 1000) => ({
-      clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+      clipPath: `circle(${height * 2 + 200}px at 52px 52px)`,
       transition: {
         type: "spring",
         stiffness: 20,
@@ -15,9 +15,9 @@ const sidebar = {
       }
     }),
     closed: {
-      clipPath: "circle(30px at 40px 40px)",
+      clipPath: "circle(30px at 52px 52px)",
       transition: {
-        delay: 0.5,
+        delay: 0.3,
         type: "spring",
         stiffness: 400,
         damping: 40
@@ -31,11 +31,10 @@ export const NavMenu = () => {
     const { height } = useDimensions(containerRef);
 
     return (
-        <motion.nav initial={false} animate={isOpen ? "open" : "closed"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-24">
-            <motion.div className="absolute top-0 left-0 right-0 w-24" variants={sidebar}>
-                <Navigation />
-                <BurgerMenu toggle={() => toggleOpen()}/>
-            </motion.div>
+        <motion.nav initial={false} animate={isOpen ? "open" : "closed"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-28">
+            <motion.div className="fixed top-0 left-0 bottom-0 w-28 bg-footcolor shadow-2xl shadow-black" variants={sidebar}/>
+            <Navigation />
+            <BurgerMenu toggle={() => toggleOpen()}/>
         </motion.nav>
     )
 }

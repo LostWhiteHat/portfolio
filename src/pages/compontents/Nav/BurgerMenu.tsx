@@ -4,9 +4,9 @@ import { RefAttributes } from "react";
 const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & RefAttributes<SVGPathElement>) => {
     return (
         <motion.path 
-        fill="transparent"
+        fill="#3b82f6"
         strokeWidth="4"
-        stroke="hsl(0, 0%, 18%)"
+        stroke="#3b82f6"
         strokeLinecap="round"
         { ...props }
         />
@@ -15,8 +15,8 @@ const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & 
 
 export const BurgerMenu = ({toggle}: any) => {
     return (
-        <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center pl-[0.15rem] pt-[0.15rem]">
-            <svg width={23} height={23} viewBox="0 0 23 23" color="#3b82f6">
+        <button onClick={toggle} className="border-none cursor-pointer absolute top-7 left-7 w-12 h-12 rounded-full bg-transparent flex items-center justify-center pl-[0.15rem] pt-[0.15rem]">
+            <svg width={23} height={23} viewBox="0 0 23 23" fill="#3b82f6">
                 <Path variants={{
                     closed: { d: "M 2 2.5 L 20 2.5" },
                     open: { d: "M 3 16.5 L 17 2.5" }
