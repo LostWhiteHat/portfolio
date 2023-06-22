@@ -1,12 +1,8 @@
-import { Inter } from 'next/font/google'
 import { useState } from 'react'
 import { motion, AnimatePresence} from 'framer-motion'
-import SideBar from "../compontents/bars/Sidebar"
-import Waves from "../compontents/waves/waves"
 import Modal from '../compontents/Modal'
 import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Projects() {
     const [modalOpen, setModalOpen] = useState(false);

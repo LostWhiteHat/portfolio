@@ -1,9 +1,4 @@
-import { Inter } from 'next/font/google'
-import SideBar from './compontents/bars/Sidebar'
-import Waves from './compontents/waves/waves'
 import Image from 'next/image'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return ( 

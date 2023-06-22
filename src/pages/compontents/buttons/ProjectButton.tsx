@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { SiGithubactions } from 'react-icons/si'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function HomeButton() {
     return (

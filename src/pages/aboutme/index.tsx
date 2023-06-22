@@ -1,11 +1,3 @@
-import { Inter } from 'next/font/google'
-import { motion, useScroll, useSpring, useTransform, MotionValue } from 'framer-motion'
-import { useRef } from 'react'
-import SideBar from "../compontents/bars/Sidebar"
-import Waves from "../compontents/waves/waves"
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Aboutme() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-10">

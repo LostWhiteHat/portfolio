@@ -72,14 +72,13 @@
   }
   h1 {
     font-size:24px;
-    
   }
 }
 
 
 @layer base {
   body {
-    @apply bg-primary
+    @apply bg-primary w-full h-full overflow-hidden p-0 m-0 flex justify-center items-center;
   }
 }
 
