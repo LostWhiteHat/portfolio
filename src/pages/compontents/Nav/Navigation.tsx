@@ -1,4 +1,3 @@
-import * as React from "react";
 import { motion } from "framer-motion";
 import HomeButton from "../buttons/HomeButton";
 import ProjectButton from "../buttons/ProjectButton";
@@ -41,11 +40,11 @@ const MenuItem = ({i}) => {
 }
 
 export const Navigation = () => (
-  <motion.ul variants={variants} className="absolute m-0 top-20">
+  <motion.ul variants={variants} className="absolute top-20">
     {itemId.map(i => (
       <MenuItem i={i} key={i} />
     ))}
   </motion.ul>
 );
 
-const itemId = [0, 1, 2, 3, 4];
+const itemId = [0, 1, 2, 3];

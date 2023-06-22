@@ -5,7 +5,7 @@ const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & 
     return (
         <motion.path 
         fill="transparent"
-        strokeWidth="3"
+        strokeWidth="4"
         stroke="hsl(0, 0%, 18%)"
         strokeLinecap="round"
         { ...props }
@@ -15,7 +15,7 @@ const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & 
 
 export const BurgerMenu = ({toggle}: any) => {
     return (
-        <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-5 left-5 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
+        <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-6 left-6 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center pl-[0.15rem] pt-[0.15rem]">
             <svg width={23} height={23} viewBox="0 0 23 23" color="#3b82f6">
                 <Path variants={{
                     closed: { d: "M 2 2.5 L 20 2.5" },
