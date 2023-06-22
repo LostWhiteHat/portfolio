@@ -1,5 +1,12 @@
 # About
+
+
+<div align="center">
+    <img src="https://raw.githubusercontent.com/LostWhiteHat/portfolio/004c7d945b3100593c96f747a5ed9cbfb2febf83/public/images/logo-no-background.svg>"/>
+</div>
+
 The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license. Please give me proper credit by linking back to [LostWhiteHat](https://github.com/LostWhiteHat/next-webapp). Thanks!\
+
 
 ## TODO
 ❌ Make site fully responsive\
@@ -41,8 +48,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<center>
-
 ## Credits
 ___
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/vercel/next.js/)
@@ -51,7 +56,6 @@ ___
 [![React Icons](https://img.shields.io/badge/React%20Icons-red?style=for-the-badge&logo=react&logoColor=black)](https://github.com/react-icons/react-icons)
 [![Tailwindcss](https://img.shields.io/badge/Tailwindcss-blue?style=for-the-badge&logo=tailwindcss&logoColor=marine)](https://github.com/tailwindlabs/tailwindcss)
 ___
-</center>
 
 
 
