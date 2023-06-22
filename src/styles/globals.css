@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 25, 34, 41;
+    --background-end-rgb: 11, 19, 25;
+  }
+}
+
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 500px);
+
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+    
+  }
+}
+
+
+@layer base {
+  body {
+    @apply bg-primary
+  }
+}
+
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center 
+    h-20 w-20 mt-2 mb-2 ml-2 mx-auto bg-secondary
+  text-blue-500 hover:text-white
+    transition-all hover:translate-x-1 duration-150
+    cursor-pointer shadow-lg shadow-black border-r-4 border-blue-600
+    rounded-lg hover:border-4 ;
+  }  
+  
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-24 rounded-md shadow-md
+    text-white bg-primary 
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-left;
+  }
+
+  .content-table {
+    @apply relative h-full ml-12
+  }
+
+  .layout-content {
+    @apply fixed grid w-auto h-auto p-7 left-28 right-0 top-0 bottom-0 pl-48 pr-64 pt-32 pb-44 gap-6 grid-cols-[2fr_1fr_2fr] grid-rows-2 list-none;
+  }
+
+  .layout_item {
+    @apply relative overflow-hidden bg-blue-500 bg-opacity-60 rounded-xl p-5 hover:bg-opacity-100 min-h-[16rem]
+  }
+}
