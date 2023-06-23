@@ -52,6 +52,7 @@ button {
     transform: translate3d(85px,0,0);
   }
 }
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
@@ -90,20 +91,25 @@ button {
   }
 
   .layout-content {
-    @apply fixed grid h-full w-full pl-[20%] pr-[20%] sm:pt-[7%] sm:pb-[13%] pt-[30%] pb-[40%]
+    @apply fixed grid h-full w-full max-2xl:pl-[20%] max-2xl:pr-[20%] max-2xl:pt-[30%] max-2xl:pb-[40%] 
+    sm:pt-[7%] sm:pb-[13%] 
+    md:pt-[30%] md:pb-[40%] 
+    lg:pt-[15%] lg:pb-[20%] 
+    2xl:pt-[12%] 2xl:pb-[15%] 
+    pr-[10%] pl-[10%]
     gap-6 sm:grid-cols-[2fr_2fr_2fr] sm:grid-rows-2 list-none grid-cols-[2fr_2fr] grid-rows-3;
   }
 
   .layout_item {
     @apply
-    bg-secondary bg-opacity-50 rounded-xl max-h-[16rem]
+    bg-secondary bg-opacity-50 rounded-xl
     transition-all duration-150
     border-blue-600 hover:border-4 
-    shadow-black shadow-lg hover:bg-opacity-100 p-4
+    shadow-black shadow-lg hover:bg-opacity-100 
+    p-4
   }
 
   .layout-item-image {
-    @apply relative flex w-full h-full items-center justify-center
+    @apply relative flex w-full h-full items-center justify-center;
   }
-
 }

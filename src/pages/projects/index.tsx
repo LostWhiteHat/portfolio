@@ -14,37 +14,37 @@ export default function Projects() {
             <div className='layout-content'>
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())}  whileHover={{ scale: 1.05 }}  whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
-                        <Image src={"./images/cpp.svg"} width={200} height={200} alt='cpp-project'/>
+                        <Image src={"./images/cpp.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>  
 
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
-                        <Image src={"./images/csharp.svg"} width={200} height={200} alt='cpp-project'/>
+                        <Image src={"./images/csharp.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>
 
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>                        
-                        <Image src={"./images/typescript.svg"} width={200} height={200} alt='cpp-project'/>
+                        <Image src={"./images/typescript.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>
 
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
-                        <Image src={"./images/python.svg"} width={200} height={200} alt='cpp-project'/>
+                        <Image src={"./images/python.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>
 
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
-                        <Image src={"./images/java.svg"} width={130} height={130} alt='cpp-project'/>
+                        <Image src={"./images/java.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>
 
                 <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
-                        <Image src={"./images/placeholder.svg"} width={200} height={200} alt='cpp-project'/>
+                        <Image src={"./images/placeholder.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
                 </motion.button>
 
