@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="shortcut icon" href="./images/favicon.ico"></link>
       </Head>
-      <div className='fixed top-0 left-0 right-0 bottom-0'>
+      <div className='absolute top-0 left-0 right-0 bottom-0'>
         <header className='fixed z-50'>
           <NavMenu />
           <Waves/>
