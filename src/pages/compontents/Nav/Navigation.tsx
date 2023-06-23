@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import HomeButton from "../buttons/HomeButton";
 import ProjectButton from "../buttons/ProjectButton";
@@ -30,8 +31,19 @@ const liVariants = {
   }
 }
 
-const MenuItem = ({i}) => {
-  const items: JSX.Element[] = [<HomeButton />, <ProjectButton/>, <AboutmeButton/>, <GithubButton/>];
+const items: JSX.Element[] = [
+  <HomeButton key={1}/>, 
+  <ProjectButton key={2}/>, 
+  <AboutmeButton key={3}/>, 
+  <GithubButton key={4}/>
+];
+
+type RequiredProps = {
+ i: number;
+}
+
+const MenuItem: React.FC<RequiredProps> = ({i}) => {
+  
    return (
     <motion.li variants={liVariants}>
       {items[i]}
@@ -39,7 +51,7 @@ const MenuItem = ({i}) => {
   );
 }
 
-export const Navigation = () => (
+const Navigation: React.FC = () => (
   <motion.ul variants={variants} className="absolute top-48 left-2">
     {itemId.map(i => (
       <MenuItem i={i} key={i} />
@@ -48,3 +60,5 @@ export const Navigation = () => (
 );
 
 const itemId = [0, 1, 2, 3];
+
+export default Navigation;

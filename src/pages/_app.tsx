@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Waves from './compontents/waves/waves'
-import { NavMenu } from './compontents/Nav/NavMenu'
+import NavMenu from './compontents/Nav/NavMenu'
 
 
 export default function App({ Component, pageProps }: AppProps) {

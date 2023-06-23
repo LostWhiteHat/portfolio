@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { SiBookalope } from 'react-icons/si'
 
-
-
-export default function HomeButton() {
+const HomeButton: React.FC = () => {
     return (
         <Link href="/">
             <div className="sidebar-icon group">
@@ -15,3 +13,5 @@ export default function HomeButton() {
         </Link>
     )
 }
+
+export default HomeButton;

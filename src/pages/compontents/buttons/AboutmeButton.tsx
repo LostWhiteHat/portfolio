@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SiAboutdotme } from 'react-icons/si'
 
-export default function AboutmeButton() {
+const AboutmeButton: React.FC = () => {
     return (
         <Link href="/aboutme">
             <div className="sidebar-icon group">
@@ -10,6 +10,8 @@ export default function AboutmeButton() {
                 </div>
                 <span className="sidebar-tooltip group-hover:scale-100">About me</span>
             </div>
-        </Link>
+        </Link>    
     )
 }
+
+export default AboutmeButton;

@@ -13,7 +13,7 @@ const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & 
     )    
 };
 
-export const BurgerMenu = ({toggle}: any) => {
+const BurgerMenu = ({toggle}: any) => {
     return (
         <button onClick={toggle} className="border-none cursor-pointer absolute top-7 left-7 w-12 h-12 rounded-full bg-transparent flex items-center justify-center pl-[0.15rem] pt-[0.15rem]">
             <svg width={23} height={23} viewBox="0 0 23 23" fill="#3b82f6">
@@ -39,3 +39,5 @@ export const BurgerMenu = ({toggle}: any) => {
         </button>
     )
 }
+
+export default BurgerMenu;

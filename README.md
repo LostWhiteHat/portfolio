@@ -19,7 +19,7 @@ The repo is an open source project and can be forked, modified, used for your ow
 ❌ Add about me page\
 ✅ ~~Edit project page to seperated project buttons per language~~\
 ❌ Add pages to the seperated buttons\
-
+❌ Add Button factory for nav menu 
 
 ## Getting Started
 

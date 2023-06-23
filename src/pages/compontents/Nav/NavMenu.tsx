@@ -1,9 +1,9 @@
 import { useCycle } from "framer-motion";
 import { useRef } from "react";
-import { useDimensions } from "./useDimensions";
+import useDimensions from "../../../utils/useDimensions";
 import { motion } from "framer-motion";
-import { Navigation } from "./Navigation";
-import { BurgerMenu } from "./BurgerMenu";
+import Navigation from "./Navigation";
+import BurgerMenu from "./BurgerMenu";
 
 const sidebar = {
     open: (height = 1000) => ({
@@ -25,7 +25,7 @@ const sidebar = {
     }
   };
 
-export const NavMenu = () => {
+const NavMenu = () => {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
@@ -38,3 +38,5 @@ export const NavMenu = () => {
         </motion.nav>
     )
 }
+
+export default NavMenu;
