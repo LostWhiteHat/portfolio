@@ -1,6 +1,6 @@
 import SkillsetTable from "../compontents/skillset/skillsettable";
 
-const Aboutme= () => {
+const Aboutme = () => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">
             <div className='absolute left-0 top-0 right-0 bottom-0'>

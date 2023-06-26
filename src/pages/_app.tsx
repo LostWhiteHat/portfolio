@@ -5,7 +5,7 @@ import Waves from './compontents/waves/waves'
 import NavMenu from './compontents/Nav/NavMenu'
 
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps}: AppProps) {
   return (
     <>
       <Head>
@@ -13,10 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <div className='absolute top-0 left-0 right-0 bottom-0'>
         <header className='fixed z-50'>
-          <NavMenu />
+          <NavMenu/>
           <Waves/>
         </header>        
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
       </div>
     </>
   )

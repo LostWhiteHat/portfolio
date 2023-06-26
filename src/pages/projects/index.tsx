@@ -42,7 +42,7 @@ const Projects = () => {
                     </div>
                 </motion.button>
 
-                <motion.button className='layout_item' onClick={() => (modalOpen ? close() : open())} whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
+                <motion.button className='layout_item' whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                     <div className='layout-item-image'>
                         <Image src={"./images/placeholder.svg"} fill={true} style={{objectFit: 'contain'}} alt='cpp-project'/>
                     </div>
