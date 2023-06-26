@@ -6,6 +6,7 @@ type Button = {
     text: string
     target?: '_blank'
     key?: number
+    toggle?: any
 }
 
 type Skillset = {

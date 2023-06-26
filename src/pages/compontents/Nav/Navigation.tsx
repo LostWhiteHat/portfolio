@@ -41,10 +41,10 @@ const Buttons: Button[] = [
   },
 ]
 
-const Navigation: React.FC = () => (
+const Navigation = ({toggle}: any) => (
   <motion.ul variants={variants} className="absolute top-48 left-2">
     {Buttons.map(i => (
-      <NavButton link={i.link} icon={i.icon} text={i.text} target={i.target} key={i.key}/>
+      <NavButton link={i.link} icon={i.icon} text={i.text} target={i.target} key={i.key} toggle={toggle}/>
     ))}
   </motion.ul>
 );

@@ -26,17 +26,17 @@ const sidebar = {
   };
 
 const NavMenu = () => {
-    const [isOpen, toggleOpen] = useCycle(false, true);
-    const containerRef = useRef(null);
-    const { height } = useDimensions(containerRef);
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
 
-    return (
-        <motion.nav initial={false} animate={isOpen ? "open" : "closed"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-28">
-            <motion.div className="fixed top-0 left-0 bottom-0 w-28 bg-footcolor shadow-2xl shadow-black" variants={sidebar}/>
-            <Navigation />
-            <BurgerMenu toggle={() => toggleOpen()}/>
-        </motion.nav>
-    )
+  return (
+      <motion.nav initial={false} animate={isOpen ? "open" : "closed"} custom={height} ref={containerRef} className="absolute top-0 left-0 bottom-0 w-28">
+          <motion.div className="fixed top-0 left-0 bottom-0 w-28 bg-footcolor shadow-2xl shadow-black" variants={sidebar}/>
+          <Navigation toggle={() => toggleOpen()}/>
+          <BurgerMenu toggle={() => toggleOpen()}/>
+      </motion.nav>
+  )
 }
 
 export default NavMenu;
