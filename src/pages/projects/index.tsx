@@ -4,7 +4,7 @@ import Modal from '../compontents/Modal'
 import Image from 'next/image'
 
 
-export default function Projects() {
+const Projects = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const close = () => setModalOpen(false);
     const open = () => setModalOpen(true);
@@ -55,3 +55,5 @@ export default function Projects() {
         </main>
     )           
 }
+
+export default Projects;

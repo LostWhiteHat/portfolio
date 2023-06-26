@@ -7,3 +7,8 @@ type Button = {
     target?: '_blank'
     key?: number
 }
+
+type Skillset = {
+    icon: Components
+    key?: number
+}

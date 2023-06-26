@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import SI from "react-icons/si"
 import React from 'react'
-import { Button } from "@/types/button";
+import { Button } from "@/types/types";
 
 const variants = {
     open: {
@@ -27,7 +26,7 @@ const NavButton: React.FC<Button> = ({link, icon, text, target}) => {
             <Link href={`${link}`} target={target ? target : ''}>
                 <div className="sidebar-icon group">
                     <div>
-                        {icon}
+                      {icon}
                     </div>
                     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
                 </div>

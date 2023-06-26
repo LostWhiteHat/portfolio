@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import NavButton from "../buttons/NavButton";
 import { SiGithub, SiGithubactions, SiBookalope, SiAboutdotme } from "react-icons/si";
-import { Button } from "@/types/button";
+import { Button } from "@/types/types";
 
 const variants = {
   open: {

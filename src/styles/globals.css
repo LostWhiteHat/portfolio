@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
 
-button {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-}
 
 .modal {
   width: clamp(50%, 700px, 90%);
@@ -19,6 +16,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.text {
+  font-family: 'Geologica', sans-serif;
 }
 
 .header-text {
@@ -74,6 +75,34 @@ button {
 }
 
 @layer components {
+  .skillset-icon-container {
+    @apply relative flex items-center justify-center
+    h-32 w-32 mt-2 mb-2 ml-2 mx-auto bg-secondary
+    text-white rounded-md border-blue-600 border-2 shadow-lg shadow-blue-800
+  }
+
+  .skillset-container {
+    @apply transition-all hover:scale-110 duration-150
+  }
+
+  .skillset-table-layout {
+    @apply grid gap-2 list-none grid-cols-1
+    md:grid-cols-1
+    xl:grid-cols-1
+  }
+
+  .learning-table-layout {
+    @apply grid gap-2 list-none grid-cols-2
+    md:grid-cols-5
+    xl:grid-cols-10
+  }
+
+  .tools-table-layout {
+    @apply grid gap-2 list-none grid-cols-2
+    md:grid-cols-3
+    xl:grid-cols-6
+  }
+
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-20 w-20 mt-2 mb-2 ml-2 mx-auto bg-secondary
