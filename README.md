@@ -20,7 +20,7 @@ The repo is an open source project and can be forked, modified, used for your ow
 ✅ ~~Edit project page to seperated project buttons per language~~\
 ✅ ~~Add projects to project button modals~~\
 ❌ Add pages to the seperated buttons\
-
+\
 ## Getting Started
 
 First, you have to install the dependencies:
@@ -37,7 +37,7 @@ pnpm:
 ```bash
 pnpm install
 ```
-
+\
 Second, run the development server:
 
 npm:
@@ -53,14 +53,14 @@ pnpm:
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
 ## Docker
 If you want to deploy the webapp on Docker:
 ```bash
 npm run build
 ```
+
 ### Requirements
 
 - Docker
