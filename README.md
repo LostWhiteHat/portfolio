@@ -64,7 +64,7 @@ If you want to deploy the webapp on Docker:
 
 
 ```bash
-docker build -t nextjs-docker
+docker build -t nextjs-docker .
 ```
 
 ```bash
