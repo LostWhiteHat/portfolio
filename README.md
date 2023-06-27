@@ -45,6 +45,22 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+## Docker
+If you want to deploy the webapp on Docker:
+### Requirements
+
+- Docker
+
+
+```bash
+docker build -t nextjs-docker
+```
+
+```bash
+docker run -p 3000:3000 nextjs-docker
+```
+
 ## Credits
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/vercel/next.js/)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://github.com/facebook/react)
