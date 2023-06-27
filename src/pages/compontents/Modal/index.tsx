@@ -25,9 +25,7 @@ const animation = {
 }
 
 const Modal = ({handleClose, text}: {handleClose: any, text: string}) => {
-    console.log(text);
     const projects: Project[] = projectsList.filter(i => i.language === text);
-    console.log(projects);
     return (
         <Backdrop onClick={handleClose}>
             <motion.div className="modal bg-blue-500" 
