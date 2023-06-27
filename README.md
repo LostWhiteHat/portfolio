@@ -57,9 +57,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Docker
 If you want to deploy the webapp on Docker:
-```bash
-npm run build
-```
 
 ### Requirements
 
