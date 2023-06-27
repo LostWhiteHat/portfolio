@@ -27,9 +27,11 @@ First, you have to install the dependencies:
 
 ```bash
 npm install
-# or
+```
+```bash
 yarn install
-# or
+```
+```bash
 pnpm install
 ```
 
@@ -37,9 +39,11 @@ Second, run the development server:
 
 ```bash
 npm run dev
-# or
+```
+```bash
 yarn dev
-# or
+```
+```bash
 pnpm dev
 ```
 
