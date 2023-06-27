@@ -4,7 +4,7 @@ const projectList: Project[] = [
     {
         language: "cpp",
         title: "Tasker",
-        description: "This is my first CPP project. I'm going to learn the basics of the language and i'm trying to save, read and delete specific data to or from a file.",
+        description: "This is my first CPP project. I am going to learn the basics of the language and i am trying to save, read and delete specific data to or from a file.",
         link: "https://github.com/LostWhiteHat/Tasker",
         key: 1
     },

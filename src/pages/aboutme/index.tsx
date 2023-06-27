@@ -10,13 +10,13 @@ const Aboutme = () => {
                         <h1 className="text-white text-4xl text-center">Know who <b className="text-blue-600 ">I am</b></h1>
                         <br/>
                         <p className="text-center text-xl text-white ml-10 mr-10 xl:mr-0 xl:ml-0">
-                            Hi, I'm <b className="text-blue-600">Patrick Bürdel</b> from <b className="text-blue-600">Bern, Switzerland</b>.
+                            Hi, I&apos;m <b className="text-blue-600">Patrick Bürdel</b> from <b className="text-blue-600">Bern, Switzerland</b>.
                             <br/>
                             <br/>
-                            I'm in the second year of my apprenticeship as an Application developer.
+                            I&apos;m in the second year of my apprenticeship as an Application developer.
                             <br/>
                             <br/>
-                            However, I've already started 4 years ago with programming.
+                            However, I&apos;ve already started 4 years ago with programming.
                             <br/>
                         </p>                            
                     </div>
@@ -25,7 +25,7 @@ const Aboutme = () => {
                         <SkillsetTable option={"skillset"}/>
                     </div>
                     <div className="mt-20">
-                        <h1 className="text-white text-4xl text-center pb-1">Skills I'm <b className="text-blue-600">working on</b></h1>
+                        <h1 className="text-white text-4xl text-center pb-1">Skills I&apos;m <b className="text-blue-600">working on</b></h1>
                         <SkillsetTable option={"learning"}/>
                     </div>
                     <div className="mb-40 mt-20 xl:mb-30">
