@@ -25,24 +25,30 @@ The repo is an open source project and can be forked, modified, used for your ow
 
 First, you have to install the dependencies:
 
+npm:
 ```bash
 npm install
 ```
+yarn:
 ```bash
 yarn install
 ```
+pnpm:
 ```bash
 pnpm install
 ```
 
 Second, run the development server:
 
+npm:
 ```bash
 npm run dev
 ```
+yarn:
 ```bash
 yarn dev
 ```
+pnpm:
 ```bash
 pnpm dev
 ```
