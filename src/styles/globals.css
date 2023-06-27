@@ -100,7 +100,7 @@
   .tools-table-layout {
     @apply grid gap-2 list-none grid-cols-2
     md:grid-cols-3
-    xl:grid-cols-6
+    xl:grid-cols-5
   }
 
   .sidebar-icon {
@@ -140,5 +140,9 @@
 
   .layout-item-image {
     @apply relative flex w-full h-full items-center justify-center;
+  }
+
+  a {
+    @apply underline
   }
 }

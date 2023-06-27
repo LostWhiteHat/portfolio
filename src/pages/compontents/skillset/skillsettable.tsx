@@ -75,10 +75,6 @@ const tools: Skillset[] = [
         key: 21
     },
     {
-        icon: <SiNeovim size={80}/>,
-        key: 22
-    },
-    {
         icon: <SiIntellijidea size={80}/>,
         key: 23
     },

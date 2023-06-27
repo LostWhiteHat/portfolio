@@ -1,5 +1,9 @@
 import { motion} from "framer-motion";
 import Backdrop from "../Backdrop";
+import { Project } from "@/types/types";
+import projectsList from '@/utils/project_array';
+import ProjectItem from "./ProjectItem";
+
 
 const animation = {
     hidden: {
@@ -20,7 +24,10 @@ const animation = {
     }
 }
 
-const Modal = ({handleClose, text}: {handleClose: any, text: String}) => {
+const Modal = ({handleClose, text}: {handleClose: any, text: string}) => {
+    console.log(text);
+    const projects: Project[] = projectsList.filter(i => i.language === text);
+    console.log(projects);
     return (
         <Backdrop onClick={handleClose}>
             <motion.div className="modal bg-blue-500" 
@@ -29,7 +36,12 @@ const Modal = ({handleClose, text}: {handleClose: any, text: String}) => {
             initial="hidden"
             animate="visible"
             exit="exit">
-                <p>{text}</p>
+                <motion.ul>
+                    {projects.map(i => (
+                        <ProjectItem title={i.title} description={i.description} link={i.link} key={i.key}/>
+                    ))}
+                </motion.ul>
+                {/* <p>{text}</p> */}
             </motion.div>
         </Backdrop>
     )
