@@ -78,18 +78,21 @@
     @apply grid gap-2 list-none grid-cols-1
     md:grid-cols-1
     xl:grid-cols-1
+    ml-5 sm:ml-0
   }
 
   .learning-table-layout {
     @apply grid gap-2 list-none grid-cols-2
     md:grid-cols-5
     xl:grid-cols-10
+    ml-5 mr-5 sm:ml-0 sm:mr-5
   }
 
   .tools-table-layout {
     @apply grid gap-2 list-none grid-cols-2
     md:grid-cols-3
     xl:grid-cols-5
+    ml-10 mr-10 sm:ml-10 sm:mr-10
   }
 
   .sidebar-icon {
