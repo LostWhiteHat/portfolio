@@ -1,5 +1,5 @@
 <h1 align="center">
-    Portfolio Webapp - v1.0
+    Portfolio Webapp - v1.1
 </h1>
 
 <div align="center">
