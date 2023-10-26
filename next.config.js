@@ -6,5 +6,5 @@
 // module.exports = nextConfig
 
 module.exports = {
-  output: 'standalone'
+  output: 'export'
 }

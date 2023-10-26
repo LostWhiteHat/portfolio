@@ -10,7 +10,6 @@ import {
   SiFramer,
   SiVisualstudiocode,
   SiVisualstudio,
-  SiNeovim,
   SiIntellijidea,
   SiWindows11,
   SiGithub,

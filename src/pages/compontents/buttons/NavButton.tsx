@@ -22,7 +22,7 @@ const variants = {
 
 const NavButton: React.FC<Button> = ({ link, icon, text, target, toggle }) => {
   return (
-    <motion.li variants={variants} onClick={toggle}>
+    <motion.li variants={variants} onClick={() => toggle}>
       <Link href={`${link}`} target={target ? target : ""}>
         <div className="sidebar-icon group">
           <div>{icon}</div>

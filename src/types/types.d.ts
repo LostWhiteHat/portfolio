@@ -1,16 +1,16 @@
-import { Component } from "react";
+import { Component, ReactNode } from "react";
 
 type Button = {
   link: string;
-  icon: Components;
+  icon: ReactNode;
   text: string;
   target?: "_blank";
   key?: number;
-  toggle?: any;
+  toggle?: () => void;
 };
 
 type Skillset = {
-  icon: Components;
+  icon: ReactNode;
   key?: number;
 };
 
