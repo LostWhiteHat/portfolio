@@ -65,8 +65,8 @@
 @layer components {
     .skillset-icon-container {
         @apply relative flex items-center justify-center
-    h-32 w-32 mt-2 mb-2 ml-2 mx-auto bg-secondary
-    text-white rounded-md border-blue-600 border-2 shadow-lg shadow-blue-800;
+      h-32 w-32 mt-2 mb-2 ml-2 mx-auto bg-secondary
+      text-white rounded-md border-blue-600 border-2 shadow-lg shadow-blue-800;
     }
 
     .skillset-container {
@@ -75,60 +75,66 @@
 
     .skillset-table-layout {
         @apply grid gap-2 list-none grid-cols-1
-    md:grid-cols-1
-    xl:grid-cols-1
-    ml-5 sm:ml-0;
+      md:grid-cols-1
+      xl:grid-cols-1
+      ml-5 sm:ml-0;
     }
 
     .learning-table-layout {
         @apply grid gap-2 list-none grid-cols-2
-    md:grid-cols-5
-    xl:grid-cols-10
-    ml-5 mr-5 sm:ml-0 sm:mr-5;
+      md:grid-cols-5
+      xl:grid-cols-10
+      ml-5 mr-5 sm:ml-0 sm:mr-5;
     }
 
     .tools-table-layout {
         @apply grid gap-2 list-none grid-cols-2
-    md:grid-cols-3
-    xl:grid-cols-5
-    ml-10 mr-10 sm:ml-10 sm:mr-10;
+      md:grid-cols-3
+      xl:grid-cols-5
+      ml-10 mr-10 sm:ml-10 sm:mr-10;
     }
 
     .sidebar-icon {
         @apply relative flex items-center justify-center 
-    h-20 w-20 mt-2 mb-2 ml-2 mx-auto bg-secondary
-  text-blue-500 hover:text-white
-    transition-all hover:translate-x-1 duration-150
-    cursor-pointer shadow-lg shadow-black border-r-4 border-blue-600
-    rounded-lg hover:border-4;
+      h-20 w-20 mt-2 mb-2 ml-2 mx-auto bg-secondary
+    text-blue-500 hover:text-white
+      transition-all hover:translate-x-1 duration-150
+      cursor-pointer shadow-lg shadow-black border-r-4 border-blue-600
+      rounded-lg hover:border-4;
     }
 
-    .button-submit {
+    .social-button {
+        @apply relative flex items-center justify-center 
+      h-12 w-12 mt-2 mb-2 ml-2 mx-auto bg-secondary
+    text-blue-500 hover:text-white
+      transition-all hover:-translate-y-1 duration-150
+      cursor-pointer shadow-lg shadow-black border-t-[3px] border-white
+      rounded-lg hover:border-[3px];
     }
 
     .sidebar-tooltip {
         @apply absolute w-auto p-2 m-2 min-w-max left-24 rounded-md shadow-md
-    text-white bg-primary 
-    text-xs font-bold 
-    transition-all duration-100 scale-0 origin-left;
+      text-white bg-primary 
+      text-xs font-bold 
+      transition-all duration-100 scale-0 origin-left;
     }
 
     .layout-content {
         @apply fixed grid h-full w-full max-2xl:pl-[20%] max-2xl:pr-[20%] max-2xl:pt-[30%] max-2xl:pb-[40%] 
-    sm:pt-[7%] sm:pb-[13%] 
-    md:pt-[30%] md:pb-[40%] 
-    lg:pt-[15%] lg:pb-[20%] 
-    2xl:pt-[12%] 2xl:pb-[15%] 
-    pr-[10%] pl-[10%]
-    gap-6 sm:grid-cols-[2fr_2fr_2fr] sm:grid-rows-2 list-none grid-cols-[2fr_2fr] grid-rows-3;
+      sm:pt-[7%] sm:pb-[13%] 
+      md:pt-[30%] md:pb-[40%] 
+      lg:pt-[15%] lg:pb-[20%] 
+      2xl:pt-[12%] 2xl:pb-[15%] 
+      pr-[10%] pl-[10%]
+      gap-6 sm:grid-cols-[2fr_2fr_2fr] sm:grid-rows-2 list-none grid-cols-[2fr_2fr] grid-rows-3;
     }
 
     .layout_item {
         @apply bg-secondary bg-opacity-50 rounded-xl
-    transition-all duration-150
-    border-blue-600 hover:border-4 
-    shadow-black shadow-lg hover:bg-opacity-100 
-    p-4;
+      transition-all duration-150
+      border-blue-600 hover:border-4 
+      shadow-black shadow-lg hover:bg-opacity-100 
+      p-4;
     }
 
     .layout-item-image {
@@ -144,11 +150,11 @@
 
     input.form-submit {
         @apply flex items-center justify-center 
-    h-12 w-full mx-auto bg-secondary
-    text-blue-500 hover:text-white
-    transition-all hover:translate-y-1 duration-150
-    cursor-pointer shadow-lg shadow-black border-t-4 border-blue-600
-    rounded-lg hover:border-4 focus:outline-none focus:translate-y-1 focus:border-4 focus:text-white;
+      h-12 w-full mx-auto bg-secondary
+      text-blue-500 hover:text-white
+      transition-all hover:translate-y-1 duration-150
+      cursor-pointer shadow-lg shadow-black border-t-4 border-blue-600
+      rounded-lg hover:border-4 focus:outline-none focus:translate-y-1 focus:border-4 focus:text-white;
     }
     textarea {
         @apply w-full mt-5 pl-2 backgroundblur h-56 text-white border-forminput border-2 rounded-lg focus:outline-none focus:border-white;
