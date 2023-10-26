@@ -75,15 +75,15 @@
 
     .skillset-table-layout {
         @apply grid gap-2 list-none grid-cols-1
-      md:grid-cols-1
-      xl:grid-cols-1
+      md:grid-cols-3
+      xl:grid-cols-3
       ml-5 sm:ml-0;
     }
 
     .learning-table-layout {
         @apply grid gap-2 list-none grid-cols-2
-      md:grid-cols-5
-      xl:grid-cols-10
+      md:grid-cols-4
+      xl:grid-cols-8
       ml-5 mr-5 sm:ml-0 sm:mr-5;
     }
 
