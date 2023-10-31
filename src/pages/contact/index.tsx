@@ -18,14 +18,16 @@ const Contact = () => {
                         type="text"
                         name="name"
                         placeholder="Name"
+                        required
                     />
                     <input
                         className="form-input"
-                        type="text"
+                        type="email"
                         name="mail"
+                        required
                         placeholder="Email"
                     />
-                    <textarea name="message" placeholder="Message" />
+                    <textarea name="message" placeholder="Message" required />
                     <input
                         type="submit"
                         value={'Submit'}
