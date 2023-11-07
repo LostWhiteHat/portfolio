@@ -1,6 +1,21 @@
-import NavButton from '../compontents/buttons/NavButton';
+import { useSession } from 'next-auth/react';
+import { useState } from 'react';
 
 const Contact = () => {
+    const { data: session } = useSession();
+    const defaultModel = {
+        name: session?.user?.name!,
+        email: session?.user?.email!,
+        message: '',
+    };
+    const [model, setModel] = useState(defaultModel);
+    const handleChange = (e: any) => {
+        setModel({
+            ...model,
+            [e.target.name]: e.target.value?.trim(),
+        });
+    };
+
     return (
         <main className="flex h-screen ml-5 mr-5 items-center justify-center">
             <div className="bg-secondary h-[535px] w-[500px] rounded-xl shadow-2xl flex items-center flex-col">
@@ -17,6 +32,8 @@ const Contact = () => {
                         className="form-input"
                         type="text"
                         name="name"
+                        onChange={handleChange}
+                        value={model.name}
                         placeholder="Name"
                         required
                     />
@@ -24,10 +41,18 @@ const Contact = () => {
                         className="form-input"
                         type="email"
                         name="mail"
-                        required
+                        onChange={handleChange}
+                        value={model.email}
                         placeholder="Email"
+                        required
                     />
-                    <textarea name="message" placeholder="Message" required />
+                    <textarea
+                        name="message"
+                        onChange={handleChange}
+                        value={model.message}
+                        placeholder="Message"
+                        required
+                    />
                     <input
                         type="submit"
                         value={'Submit'}

@@ -103,6 +103,15 @@
       rounded-lg hover:border-4;
     }
 
+    .login-button {
+        @apply fixed flex items-center justify-center 
+      h-16 w-16 top-7 right-7 bg-secondary
+    text-blue-500 hover:text-white
+      transition-all hover:translate-y-1 duration-150
+      cursor-pointer shadow-lg shadow-black border-b-4  border-white
+      rounded-lg hover:border-4;
+    }
+
     .social-button {
         @apply relative flex items-center justify-center 
       h-12 w-12 mt-2 mb-2 ml-2 mx-auto bg-secondary
@@ -113,7 +122,21 @@
     }
 
     .sidebar-tooltip {
-        @apply absolute w-auto p-2 m-2 min-w-max left-24 rounded-md shadow-md
+        @apply absolute w-auto p-2 m-2 min-w-max left-28 rounded-md shadow-md
+      text-white bg-primary 
+      text-xs font-bold 
+      transition-all duration-100 scale-0 origin-left;
+    }
+
+    .login-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max right-20 rounded-md shadow-md
+      text-white bg-primary 
+      text-xs font-bold 
+      transition-all duration-100 scale-0 origin-left;
+    }
+
+    .social-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max bottom-10 rounded-md shadow-md
       text-white bg-primary 
       text-xs font-bold 
       transition-all duration-100 scale-0 origin-left;
