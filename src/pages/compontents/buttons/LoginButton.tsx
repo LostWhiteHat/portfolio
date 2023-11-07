@@ -1,10 +1,20 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
-import { AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineUser } from 'react-icons/ai';
 
 export default function LoginButton() {
     const { data: session } = useSession();
     if (session) {
+        if (session.user?.name == null) {
+            return (
+                <div className="login-button group" onClick={() => signOut()}>
+                    <AiOutlineMail size={33} />
+                    <span className="login-tooltip group-hover:scale-100">
+                        Logout
+                    </span>
+                </div>
+            );
+        }
         return (
             <div className="login-button group" onClick={() => signOut()}>
                 <Image
