@@ -1,7 +1,6 @@
 import NextAuth from "next-auth/next";
 import GithubProvider from "next-auth/providers/github";
 import EmailProvider from "next-auth/providers/email";
-import LinkedinProvider from "next-auth/providers/linkedin";
 import PostgresAdapter from "@auth/pg-adapter";
 import { Pool } from "pg";
 
@@ -22,10 +21,6 @@ export const authOptions = {
         GithubProvider({
             clientId: process.env.GITHUB_ID,
             clientSecret: process.env.GITHUB_SECRET
-        }),
-        LinkedinProvider({
-            clientId: process.env.LINKEDIN_ID,
-            clientSecret: process.env.LINKEDIN_SECRET
         }),
         EmailProvider({
             server: {

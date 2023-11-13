@@ -16,7 +16,6 @@
     "eslint": "8.37.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.12.16",
-    "mariadb": "^3.2.2",
     "next": "13.3.0",
     "next-auth": "^4.24.4",
     "nodemailer": "^6.9.7",
