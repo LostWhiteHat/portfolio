@@ -8,7 +8,6 @@ import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
 } from 'react-icons/bs';
-import { log } from 'console';
 
 var setSubject: string = '';
 

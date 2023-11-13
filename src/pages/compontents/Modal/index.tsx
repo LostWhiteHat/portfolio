@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 import Backdrop from '../Backdrop';
-import { Project } from '@/types/types';
-import projectsList from '@/utils/project_array';
 import ProjectItem from './ProjectItem';
 import { useEffect, useState } from 'react';
 
@@ -25,11 +23,11 @@ const animation = {
 };
 
 const defaultModel = {
+    pid: 0,
     language: '',
     title: '',
     description: '',
     link: '',
-    key: 0,
 };
 
 const Modal = ({ handleClose, text }: { handleClose: any; text: string }) => {
@@ -44,6 +42,7 @@ const Modal = ({ handleClose, text }: { handleClose: any; text: string }) => {
         };
         getData();
     }, [text]);
+
     return (
         <Backdrop onClick={handleClose}>
             <motion.div
@@ -60,7 +59,7 @@ const Modal = ({ handleClose, text }: { handleClose: any; text: string }) => {
                             title={i.title}
                             description={i.description}
                             link={i.link}
-                            key={i.key}
+                            key={i.pid}
                         />
                     ))}
                 </motion.ul>
