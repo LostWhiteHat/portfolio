@@ -14,14 +14,6 @@
 
 The repo is an open source project and can be forked, modified, used for your own purposes or for any other purpose described in the MIT license.
 
-## TODO
-
-✅ ~~Make site fully responsive~~\
-✅ ~~Add about me page~~\
-✅ ~~Edit project page to seperated project buttons per language~~\
-✅ ~~Add projects to project button modals~~\
-❌ Add pages to the seperated buttons\
-
 ## Getting Started
 
 First, you have to install the dependencies:
