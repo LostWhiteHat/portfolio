@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextApiResponse } from 'next';
 
 export function middleware() {
     const res = NextResponse.next()
