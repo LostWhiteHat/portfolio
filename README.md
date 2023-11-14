@@ -75,6 +75,12 @@ docker build -t nextjs-docker .
 docker run -p 3000:3000 nextjs-docker
 ```
 
+- Docker-Compose
+
+```bash
+docker compose up -d
+```
+
 ## Credits
 
 [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://github.com/vercel/next.js/)
