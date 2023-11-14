@@ -34,7 +34,7 @@ const Modal = ({ handleClose, text }: { handleClose: any; text: string }) => {
     const [data, setData] = useState([defaultModel]);
     useEffect(() => {
         const getData = async () => {
-            const res = await fetch('http://localhost:3000/api/projects', {
+            const res = await fetch('https://buerdel.dev/api/projects', {
                 method: 'GET',
             });
             const response = await res.json();
