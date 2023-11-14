@@ -1,7 +1,7 @@
-import { NextApiResponse } from 'next';
+import { NextApiRequest } from "next";
 
 export function middleware() {
-    const res = NextResponse.next()
+    const res = NextApiRequest.next()
 
     res.headers.append('Access-Control-Allow-Credentials', "true");
 
