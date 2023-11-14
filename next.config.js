@@ -10,6 +10,7 @@
 module.exports = {
     output: 'standalone',
     headers: {
-        'Access-Control-Allow-Origin': ['https://buerdel.dev']
+        'Access-Control-Allow-Origin': ['https://buerdel.dev'],
+        'Access-Control-Allow-Methods': ['GET']
     }
 };
