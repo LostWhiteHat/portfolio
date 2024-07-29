@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="fixed w-screen bottom-3 left-2 text-sm text-white z-[51]">
             <p>
-                Copyright <span>&copy;</span> 2023 Patrick Bürdel
+                Copyright <span>&copy;</span> 2024 Patrick Bürdel
             </p>
 
             <Link
